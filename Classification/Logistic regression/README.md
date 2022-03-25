@@ -20,12 +20,12 @@ for example: spam filtering(spam 1 or not 0), tumor classification(malignant1 or
 3- The meaningful variables only included in the model.
 
 # Advantages and Disadvantages:
-- Advantages:
+**- Advantages:**
 Easy to implement and very efficient to train.
 have good accuracy. 
 It performs well in linearity separable datasets and it requires less training.
 
-- Disadvantages
+**- Disadvantages:**
 Quite sensitive to noise.
 It also can affect performance is the independent variables are correlated.
 It may lead to overfitting if the no. of observations is smaller than the no. of features.
