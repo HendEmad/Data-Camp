@@ -16,3 +16,4 @@ Using feature selection, we can optimize the model in several ways:
 ### 1- Filter method:
 Features are dropped based on their relation or how they are correlated to the output.
 ![this is an image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fanalyticsindiamag.com%2Fwhat-are-feature-selection-techniques-in-machine-learning%2F&psig=AOvVaw32q21CnzVKlrhBSdrekMh4&ust=1648303893580000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPDlg9q44fYCFQAAAAAdAAAAABAS)
+l
