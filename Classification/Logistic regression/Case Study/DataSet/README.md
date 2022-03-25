@@ -22,7 +22,7 @@ The classification goal is to predict if the client will subscribe (yes/no) a te
 5. default: has credit in default? (categorical: 'no','yes','unknown')
 6. housing: has housing loan? (categorical: 'no','yes','unknown')
 7. loan: has personal loan? (categorical: 'no','yes','unknown')
-# related with the last contact of the current campaign:
+### related with the last contact of the current campaign:
 8. contact: contact communication type (categorical: 'cellular','telephone')
 9. month: last contact month of year (categorical: 'jan', 'feb', 'mar', ..., 'nov', 'dec')
 10. day_of_week: last contact day of the week (categorical: 'mon','tue','wed','thu','fri')
