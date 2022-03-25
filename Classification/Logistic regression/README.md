@@ -38,24 +38,24 @@ Where (W^T)Xi represents the distance between the point i the straight line.
 - It the point is above the straight line, the values of the points are positive Yi = +1 =, hence (W^T)Xi > 0
 
 - If the points are below the straight line, thy are negative Yi = -1 , hence (W^T)Xi < 0.
-![this is an iamge](https://drive.google.com/file/d/1BhnetWSCKRpo7dq1x7B5beSRacAPSTMK/view?usp=sharing)
+![this is an iamge](https://qph.fs.quoracdn.net/main-qimg-57fd2448dfb67cfff990f32191463e80)
 
-y = (W^T)Xi + b where:
+**y = (W^T)Xi + b** where:
+intercept b = 0; Y = (W^T)X; blue = +1; Red = -1
 
-intercept b = 0; Y = (W^T)X; Green = +1; Red = -1
+**There are four cases:**
 
--There are four cases:
+1. Case 1: blue point is above the plane --> Yi = +1, (W^T)Xi > 0 --> Result = Yi * (W^T)Xi > 0 --> Outcome: Good(correct) classification.
 
-1- Case 1: green point is above the plane --> Yi = +1, (W^T)Xi > 0 --> Result = Yi * (W^T)Xi > 0 --> Outcome: Good(correct) classification.
+2. Case 2: blue point is below the plane --> Yi = +1, (W^T)Xi < 0 --> Result = Yi * (W^T)Xi < 0 --> Outcome: Bad(incorrect) classification.
 
-2- Case 2: green point is below the plane --> Yi = +1, (W^T)Xi < 0 --> Result = Yi * (W^T)Xi < 0 --> Outcome: Bad(incorrect) classification.
+3. Case 3: red point is below the plane --> Yi = -1, (W^T)Xi < 0 --> Result = Yi * (W^T)Xi > 0 --> Outcome: Good(correct) classification.
 
-3- Case 3: red point is below the plane --> Yi = -1, (W^T)Xi < 0 --> Result = Yi * (W^T)Xi > 0 --> Outcome: Good(correct) classification.
+4. Case 4: red point is above the plane --> Yi = -1, (W^T)Xi > 0 --> Result = Yi * (W^T)Xi < 0 --> Outcome: Bad(incorrect) classification.
 
-4- Case 4: red point is above the plane --> Yi = -1, (W^T)Xi > 0 --> Result = Yi * (W^T)Xi < 0 --> Outcome: Bad(incorrect) classification.
+**Cost Function:**
+Maximizing the sum of all logic function outcomes for the data points in the dataset . so, if we have 1 million records, we will have 1 million logit function outcomes which represent the classification of the records and at the end, all of them are summed up. The higher the sum, the better classification of the record is performed.
 
-Cost Function: maximizing the sum of all logic function outcomes for the data points in the dataset . so, if we have 1 million records, we will have 1 million logit function outcomes which represent the classification of the records and at the end, all of them are summed up. The higher the sum, the better classification of the record is performed.
-
-This result is used to decide where the best fit line should be placed in order to separate the two classes in the best way possible and on each iteration, we are updating the omega value(W) then the part (W^T ),; because y is always +1 or -1 and the value of the record in the dataset. So, if the point is 10 that means that the value for x is going to be 10.
+- This result is used to decide where the best fit line should be placed in order to separate the two classes in the best way possible and on each iteration, we are updating the omega value(W) then the part (W^T ),; because y is always +1 or -1 and the value of the record in the dataset. So, if the point is 10 that means that the value for x is going to be 10.
 
 - The sigmoid function is used to mitigate the issue with outliers by normalizing the results calculated by the logic function and transforming them to values in the range between 0 and 1 which is done by applying the formula: Sigmoid f(z) = 1 / (1 + e^-z) where '-z' is the result of the logic function for the specific record, and 'e' is a constant with value 2.718  
