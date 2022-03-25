@@ -16,4 +16,7 @@ Using feature selection, we can optimize the model in several ways:
 ### 1- Filter method:
 Features are dropped based on their relation or how they are correlated to the output.
 ![this is an image](https://analyticsindiamag.com/wp-content/uploads/2019/04/filte.jpg)
-l
+
+### 2- Wrapper method:
+we split the data into subsets and train a model using this. Based on the output of the model, we add and subtract seatures and train the model again.
+![this is an image](https://www.analyticsvidhya.com/wp-content/uploads/2016/11/Wrapper_1.png)
