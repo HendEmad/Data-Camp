@@ -1,4 +1,4 @@
-# (Pandas)[https://pandas.pydata.org/docs/index.html]:
+# [Pandas](https://pandas.pydata.org/docs/index.html):
 - A very popular module to deal with data.
 - It gives us many tools for working with tabular data. we can load tabular data from multiple sources (like spreadsheets or databases), search for particular rows or columns in your loaded data, calculate aggregate statistics (like averages or standard deviations), and combine data from multiple sources.
 - There is another powerful datatype included in Pandas which is **DataFrame(df)** that represents the tabular data.
