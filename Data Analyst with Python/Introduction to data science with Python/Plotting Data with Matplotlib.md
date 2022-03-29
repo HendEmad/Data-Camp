@@ -14,7 +14,7 @@ plt.show()        #Tankes no arguments
 
 we can add another commands(lines) as title line or another line to be plotted.
 
-**_If we want to plot multiple lines on the samw axis: _**
+**_If we want to plot multiple lines on the samw axis:_**
 
 we add a second ```plt.plot(first positional argument(x-values), second positional argument(y-values))```. for example:
 ```plt.plot(data2_xvalues, data2_yvalues)```
@@ -25,11 +25,11 @@ we need to add labels ans legends to make communication to judges easier.
 
 ### Axes and title labels
 
-**label x_axis: **```plt.xlabel("string_represents_the_xlabel")```
+**label x_axis:**```plt.xlabel("string_represents_the_xlabel")```
 
-**label y_axis: **```plt.ylabel("string_represents_the_ylabel")```
+**label y_axis:**```plt.ylabel("string_represents_the_ylabel")```
 
-**title: **```plt.title("string_represents_the_ylabel")```
+**title:** ```plt.title("string_represents_the_ylabel")```
 
 These 3 functions must come before ```plt.show()``` as this function only displaying all what we did.
 
@@ -58,9 +58,9 @@ The output will be
 
 # Modifying text:
 
-**_Change font size: _** ```fontsize = n``` keyword argument
+**_Change font size:_** ```fontsize = n``` keyword argument
 
-**_Change [font color](https://en.wikipedia.org/wiki/Web_colors): _** ```color = "new_color"``` keyword argument
+**_Change [font color](https://en.wikipedia.org/wiki/Web_colors):_** ```color = "new_color"``` keyword argument
 
 example:
 ```
