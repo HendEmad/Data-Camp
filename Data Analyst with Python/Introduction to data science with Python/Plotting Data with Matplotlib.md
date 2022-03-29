@@ -67,3 +67,21 @@ example:
 plt.title("plot title", fontsize = 20)
 plt.legend(color = "green")
 ```
+
+# Styling graphs:
+**Changing the line color:** by adding the ```color = "new_color"``` to the ```plt.plot()``` command.
+
+**Changing line width:** the deault line width is _**"1"**_ , we can change it by adding the ```linewidth = n``` to the ```plt.plot()``` command.
+
+**Changing line style:** by adding ```linestyle = '-' or '--' or '-.' or ':'``` tot he ```plt.plot()``` command.
+
+**Adding markers:** by adding ```marker = 'x' or 's' or 'o' or 'd' or '*' or 'h'``` to the ```plt.plot()``` command.
+
+note: **_s for square markers, d for diamond-shaped markers, _** 
+![Capture](https://user-images.githubusercontent.com/91827137/160609176-7988de6c-bdf1-4167-8dd8-851ff4289d51.PNG)
+
+**Changing the background, colors, and fonts for the entire graph --- setting a grath style**
+- There are four differenct styles supported by plt:
+![G3EXHJdPTSCkIj4ZTm6z_Screen_Shot_2020-06-26_at_12 39 50_PM](https://user-images.githubusercontent.com/91827137/160610054-cf64bb7c-5b90-4c77-a8e2-7612f093d62a.png)
+
+we can change the style using: ```plt.style.use()```
