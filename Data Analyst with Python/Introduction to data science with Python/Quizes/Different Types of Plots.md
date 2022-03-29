@@ -64,5 +64,24 @@ Officer Deshaun wants to plot the average number of hours worked per week for hi
 
 ```Solution```
 ```
+# Display the DataFrame hours using print
+print(hours)
 
+# Create a bar plot from the DataFrame hours
+plt.bar(hours.officer, hours.avg_hours_worked,
+        # Add error bars
+        yerr=hours.std_hours_worked)
+
+# Display the plot
+plt.show()
 ```
+
+# Where did the time go?
+Officer Deshaun wants to compare the hours spent on field work and desk work between him and his colleagues. In this DataFrame, he has split out the average hours worked per week into desk_work and field_work.
+
+You can use the same DataFrame containing the hours worked from the previous exercise (hours).
+
+**Instructions **
+- Create a bar plot of the time each officer spends on desk_work.
+- Label that bar plot "Desk Work".
+
