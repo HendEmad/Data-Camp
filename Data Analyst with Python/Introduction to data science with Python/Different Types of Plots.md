@@ -31,3 +31,14 @@ plt.scatter(df.x_data, df.y_data, alpha = 0.1)
 
 ### The darker areas have may points, the lighter areas have fewer points.
 
+# Making a bar chart
+bar chart is the best way to visualize a comparison of categorical data.
+
+the function used is ```plt.bar()``` and it takes two arguments: the labels for each bar, and the height of each bar. 
+ 
+To make a horizontal bar chart ---> we use the function ```plt.barh()``` 
+
+_**note**_: average dosen't always tell the full story, there will be some sort of error assiciated with our such as standard deviation or standard error of the mean.
+we can add error bars to our bar chart by using keyword ```yerr``` after the first two positional arguments in ```plt.bar(x_label, y_label, yerr = df.error)```. in this case, we are filling in yerr with a column of our dataframe called 'error'.
+
+
