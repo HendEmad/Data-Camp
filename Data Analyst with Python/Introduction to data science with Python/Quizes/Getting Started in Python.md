@@ -42,6 +42,23 @@ print(favorite_toy)
 print(owner)
 ```
 
+# Correcting string errors
+Correct the mistakes in the code so that it runs without producing syntax errors.
+```
+# One or more of the following lines contains an error
+# Correct it so that it runs without producing syntax errors
+birthday = "2017-07-14'
+case_id = 'DATACAMP!123-456?
+```
+
+solution:
+```
+# One or more of the following lines contains an error
+# Correct it so that it runs without producing syntax errors
+birthday = '2017-07-14'
+case_id = 'DATACAMP!123-456?'
+```
+
 # Load a DataFrame
 - Use pd.read_csv() to load data from a CSV file called ransom.csv. This file represents the frequency of each letter in the ransom note for Bayes.
 
