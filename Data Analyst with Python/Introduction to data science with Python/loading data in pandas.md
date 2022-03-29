@@ -18,3 +18,23 @@
 - We can display the data frame using ```print('df_name')``` function.
 - We can use ```df.head()``` to display the first five rows from the data(n rows, but 5 by default). 
 - We can use ```df.tail()``` to display the last five rows from the data(n rows, but 5 by default).
+- We can use also ```df.info``` to know no.of columns and their data types.
+
+### Selecting columns:
+The first way we use the data is by selecting columns which means getting all values inside a specific columns. we select columns to:
+1- Making calculations on them:
+```credit_records.price.sum()``` ---> To get the total amount of money spent by our suspects.
+OR ```credit_records['price'].sum()```
+2- Using them as input to a function:
+
+for example: ```plt.plot(ransom['letter'], ransom['frequency'])``` ---> to create a plot of frequencies of each letter in the ransom note. Here, The df called **ransom**, and the columns are **letter & frequency** 
+
+To select a specific column: ```var = df_name['column_name_string']```. for example: ```suspect = credit_records['suspect']```
+If we print the column ```print(suspect)```, we will see all values inside this particular column.
+
+- There is anpther way we can do **ONLY IF the columns string only contains letters, numbers, and underscores**, we can use dot notation: ```var = df_name.column_name_string```. for example: ```price = credit_records.price``` and displaying the valuse within this column in the same way which is ```print(price)``` 
+
+### Common errors while selecting columns:
+1- When the column name contains spaces or special characters, you need to use bracket and string notation (the first way), not the dot notation (the second way).
+
+If you use the second way in this case, python will gets confused and thinks that you're referring to several different variables.
