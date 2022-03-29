@@ -53,3 +53,16 @@ plt.xlabel('Longitude')
 plt.show()
 ```
 
+# Build a simple bar chart
+Officer Deshaun wants to plot the average number of hours worked per week for him and his coworkers. He has stored the hours worked in a DataFrame called hours, which has columns officer and avg_hours_worked. Recall that the function plt.bar() takes two arguments: the labels for each bar, and the height of each bar. Both of these can be found in our DataFrame.
+
+**Instructions **
+
+- Display the DataFrame hours using a print command.
+- Create a bar chart of the column avg_hours_worked for each officer from the DataFrame hours.
+- Use the column std_hours_worked (the standard deviation of the hours worked) to add error bars to the bar chart.
+
+```Solution```
+```
+
+```
