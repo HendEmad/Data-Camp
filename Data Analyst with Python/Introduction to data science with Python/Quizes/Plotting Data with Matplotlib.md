@@ -151,7 +151,7 @@ Help Sergeant Laura try out a few different style options. Changing the plotting
 - View all styles by typing print(plt.style.available) in the console.
 - Pick one of those styles and see what it looks like.
 
-```Solution````
+```Solution```
 ```
 # Change the style to fivethirtyeight
 plt.style.use('fivethirtyeight')
