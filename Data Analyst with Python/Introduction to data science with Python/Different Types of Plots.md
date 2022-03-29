@@ -97,10 +97,11 @@ ex for this case:
 plt.hist(male_weight)
 plt.hist(female_weight)
 ```
-![2222](https://user-images.githubusercontent.com/91827137/160705723-fba9c76e-9b52-4744-ae0c-edd493ad6cb5.PNG)
+![2222](https://user-images.githubusercontent.com/91827137/160706638-3ef61c19-056c-4e65-a863-6da146d383c4.PNG)
+
 
 In this case, we don't care about the absolute number of male people of male puppies with a given weight. Instead, we care about what proportion of the dataset has that weight. 
 
 we can solve this problem with normalization. It reduces the height of each bar by a constant factoe so that the sum of the areas of each bar adds to one. This would make the histograms comparable, even if the sample sizes are different. we can do it by using the keyword argument ```denisty = True``` 
 
-![Capture](https://user-images.githubusercontent.com/91827137/160706535-29a63dd9-c59d-42c2-93f7-dc2387fb6236.PNG)
+![Capture](https://user-images.githubusercontent.com/91827137/160706672-f9a96218-52e4-4187-9d82-bbcca0f0cb8b.PNG)
