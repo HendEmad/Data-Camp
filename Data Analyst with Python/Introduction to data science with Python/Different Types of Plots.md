@@ -74,3 +74,33 @@ plt.legend()
 plt.show()
 ```
 
+# Making a histogram
+- The histogram visualizes the distribution of values in a dataset. to create it, we place each piece of data into a bin.
+
+- To create it ---> ```plt.hist()```. this function takes only one argument which is the dataset.
+
+- By default, the histogram will be created with 10 bins of equal spanning from the smallest sample to the largest sample in the dataset. 
+
+- To change the no. of bins, we can use the keyword ```bins = n``` where n is an integer.
+
+- ex: ```plt.hist(data, bins = 40)```. This will help us visualize more detail in the histogram.
+
+- To zoom in a specific data of our dataset, we use the keyword ```range``` to set the ```minimum``` and ```maximum``` value for the histogram:
+            ```plt.hist(data, range = (xmin, xmax))```
+            
+            
+### Special case: 
+Suppose we want to compare the distribution of weights of male and female puppies. for some reason, we were able to collect many more samples of male puppy weights than female puppy weights. when we plot both histograms on the same axes, we can't actually see the difference in the distributions.
+
+ex for this case:
+```
+plt.hist(male_weight)
+plt.hist(female_weight)
+```
+![2222](https://user-images.githubusercontent.com/91827137/160705723-fba9c76e-9b52-4744-ae0c-edd493ad6cb5.PNG)
+
+In this case, we don't care about the absolute number of male people of male puppies with a given weight. Instead, we care about what proportion of the dataset has that weight. 
+
+we can solve this problem with normalization. It reduces the height of each bar by a constant factoe so that the sum of the areas of each bar adds to one. This would make the histograms comparable, even if the sample sizes are different. we can do it by using the keyword argument ```denisty = True``` 
+
+![Capture](https://user-images.githubusercontent.com/91827137/160706535-29a63dd9-c59d-42c2-93f7-dc2387fb6236.PNG)
