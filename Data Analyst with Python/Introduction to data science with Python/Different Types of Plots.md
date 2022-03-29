@@ -32,13 +32,45 @@ plt.scatter(df.x_data, df.y_data, alpha = 0.1)
 ### The darker areas have may points, the lighter areas have fewer points.
 
 # Making a bar chart
-bar chart is the best way to visualize a comparison of categorical data.
+bar chart is the best way to visualize a comparison of categorical data, so x_label will be created automatically.
 
 the function used is ```plt.bar()``` and it takes two arguments: the labels for each bar, and the height of each bar. 
  
-To make a horizontal bar chart ---> we use the function ```plt.barh()``` 
+To make a horizontal bar chart ---> we use the function ```plt.barh()```. It is useful when having many bars.
 
 _**note**_: average dosen't always tell the full story, there will be some sort of error assiciated with our such as standard deviation or standard error of the mean.
 we can add error bars to our bar chart by using keyword ```yerr``` after the first two positional arguments in ```plt.bar(x_label, y_label, yerr = df.error)```. in this case, we are filling in yerr with a column of our dataframe called 'error'.
 
+ex:
+```
+plt.bar(df.precinct, df.pet_abductions, yerr = df.error)
+plt.ylabel('pet avductions')
+plt.show()
+```
+![Capture](https://user-images.githubusercontent.com/91827137/160698345-7f810876-f5fc-46ce-b042-57965a57834d.PNG)
+
+# Stacked bar charts
+we display two different sets of bars
+![Capture](https://user-images.githubusercontent.com/91827137/160698762-52f9e403-04cf-4568-aed7-5bcce2179f4d.PNG)
+
+Here, for this example:
+- The height of each blue bar represents the no. of dogs.
+- The height of each orange bar represents the no. of cats.
+- The total height of the blue and orange bars represents the total no. of pets for each city.
+
+Also, for the same example:
+- to create the stacked bar chart:
+we start by plotting dogs column as usual. ```plt.bar(df.precinct, df.dog)``` --> the blue bar
+
+Next. we stack the cat bars on the top of the dog bars by using the keyword ```bottom```
+
+```plt.bar(df.precinct, df.cat, bottom = df.dog)```
+
+So, to create the full example code for the last plot:
+```
+plt.bar(df.precinct, df.dog, label = 'Dog')
+plt.bar(df.precinct, df.cat, label = 'Cat')
+plt.legend()
+plt.show()
+```
 
