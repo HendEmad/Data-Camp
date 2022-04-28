@@ -48,3 +48,7 @@ Output:
 
 ![Capture](https://user-images.githubusercontent.com/91827137/165604570-4923531f-8ea0-463f-904b-c15bbf580bb5.PNG)
 
+```notes``` 
+- The bin containing the most observations is the highest one.
+- Controlling no.of bins is pretty important. Too few bins will oversimplify reality and won't show us the details. Too many bins will overcomplicate reality and won't show the bigger picture.
+
