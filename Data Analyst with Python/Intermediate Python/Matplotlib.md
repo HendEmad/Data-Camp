@@ -59,6 +59,7 @@ for example: plt.yticks([0, 2, 4, 6, 8, 10], ['0', '2B', '4B', '6B', '8B', '10B'
 The first list represents the numbers on the axis and the second list contsins how these numbers will be displayed.
 
 ```Output```
+
 ![Capture](https://user-images.githubusercontent.com/91827137/165739529-e74cdd07-78fb-41b4-8ba4-9794b7d63bfe.PNG)
 
 - We must add them before plt.show() to display them on the output plot.
