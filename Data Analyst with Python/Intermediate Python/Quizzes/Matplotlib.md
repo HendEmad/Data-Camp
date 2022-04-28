@@ -231,4 +231,3 @@ plt.show()
 _Output_
 
 ![Capture](https://user-images.githubusercontent.com/91827137/165743938-fff7b7a8-2711-4104-b7aa-8c4053512ba6.PNG)
-
