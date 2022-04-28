@@ -101,8 +101,13 @@ plt.clf()
 
 ![30](https://user-images.githubusercontent.com/91827137/164703250-a3627293-e26a-4ade-bfb6-5d2c5f78fe28.PNG)
 
-## Quiz 5: Build a histogram (3): compare
+## Quiz 5: Choose the right plot (1)
+You want to visually assess if the grades on your exam follow a particular distribution. Which plot do you use?
 
-![31](https://user-images.githubusercontent.com/91827137/164703801-62399167-cadd-4305-834f-364e8d1f21af.PNG)
+```Answer``` Histogram
 
-![32](https://user-images.githubusercontent.com/91827137/164704508-804bee4a-4e46-4c69-9aab-4c6de63d3974.PNG)
+## Quiz 6: Choose the right plot (2)
+You want to visually assess if longer answers on exam questions lead to higher grades. Which plot do you use?
+
+```Answer``` Scatter Plot
+
