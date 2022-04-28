@@ -52,3 +52,13 @@ Output:
 - The bin containing the most observations is the highest one.
 - Controlling no.of bins is pretty important. Too few bins will oversimplify reality and won't show us the details. Too many bins will overcomplicate reality and won't show the bigger picture.
 
+## Customization (How to customize out plot)
+- examples: adding colors, labels --> plt.xlabel() & plt.ylabel(), title --> plt,title(), and so on. 
+- Another example: changing any axis' starting to 0 --> plt.yticks([]) & plt.xticks([]). We can add addition information like(billion, ...) to any axis numbers' list --> we can do it using the xticks() || yticks() functions by passing another list contains the additional information to the function, this new list MUST have the same size as the list of numbers on the axis.
+for example: plt.yticks([0, 2, 4, 6, 8, 10], ['0', '2B', '4B', '6B', '8B', '10B'])
+The first list represents the numbers on the axis and the second list contsins how these numbers will be displayed.
+
+```Output```
+![Capture](https://user-images.githubusercontent.com/91827137/165739529-e74cdd07-78fb-41b4-8ba4-9794b7d63bfe.PNG)
+
+- We must add them before plt.show() to display them on the output plot.
