@@ -1,3 +1,4 @@
+## Dictionaries
 - It cantains values and keys --> ```dict = {'key1' : 'value1', 'key2' : 'value2', ......}```
 
 - ex: ```world = {'egypt' : 100, 'albania' : 2.77, 'algeria' : 36.21}```
